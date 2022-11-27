@@ -1,0 +1,63 @@
+<!--
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <div class="container">
+       
+       <div class="popup" id="popup" style="size: 2000px;">
+        <img src="tick.png">
+            <h2>
+                Request Accepted
+                <p><h3>Your request has been successfully submitted to the AEC Central Library!</h3></p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </h2>
+       </div>
+    </div>
+
+    <script>
+        let popup= document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add(".open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove(".open-popup");
+        }
+    </script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="" content="" />
+    <title>Popup Message</title>
+    <link rel="stylesheet" href="style4.css" />
+  </head>
+  <body>
+    <h1>Popup Message</h1>
+    <div class="box">
+      <a class="button" href="#popup1">Request Proceed</a>
+    </div>
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+        <h2>Here i am</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            Your request has been successfully submitted to the AEC Central Library! <a href="https://www.aecwb.edu.in/" target="_blank">@AECCentralLibrary</a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+        <a class="button" href="dashboard.html">Go Back!</a>
+      </div>
+  </body>
+</html>
